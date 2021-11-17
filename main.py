@@ -38,7 +38,7 @@ Practice = [
 
 @app.route('/', methods=['GET'])
 def home():
-    return "Simple Rest Api CRUD (create, read, update, delete) example"
+    return "Simple Rest API CRUD (create, read, update, delete) example"
 
 
 @app.route('/all', methods=['GET'])
