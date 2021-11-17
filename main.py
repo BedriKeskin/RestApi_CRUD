@@ -38,7 +38,7 @@ Practice = [
 
 @app.route('/', methods=['GET'])
 def home():
-    return "Simple Rest API CRUD (create, read, update, delete) example"
+    return "Simple Rest API CRUD (create, read, update, delete) example."
 
 
 @app.route('/all', methods=['GET'])
@@ -64,11 +64,11 @@ def create():
     point = int(request.json['point'])
     level = request.json['level']
     language = request.json['language']
-    input = request.json['input']
+    input1 = request.json['input']
     expected_output = request.json['expected_output']
 
     newItem = {'id': uuid, 'title': title, 'problem': problem, 'point': point, 'level': level, 'language': language,
-               'input': input, 'expected_output': expected_output}
+               'input': input1, 'expected_output': expected_output}
 
     Practice.append(newItem)
     return "New item added"
@@ -86,12 +86,12 @@ def update():
             point = int(request.json['point'])
             level = request.json['level']
             language = request.json['language']
-            input = request.json['input']
+            input1 = request.json['input']
             expected_output = request.json['expected_output']
 
             newItem = {'id': uuid, 'title': title, 'problem': problem, 'point': point, 'level': level,
                        'language': language,
-                       'input': input, 'expected_output': expected_output}
+                       'input': input1, 'expected_output': expected_output}
 
             Practice.append(newItem)
     return "Updated"
