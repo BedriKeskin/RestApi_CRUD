@@ -1,0 +1,177 @@
+{
+	"info": {
+		"_postman_id": "7e467137-bce1-4297-9f91-28713793844a",
+		"name": "PostmanCollection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://127.0.0.1:5000/",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:5000/all",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/all",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:5000/read?id=1ff26d62-e748-4907-bccf-cf2eec4ec06b",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/read?id=1ff26d62-e748-4907-bccf-cf2eec4ec06b",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"read"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "1ff26d62-e748-4907-bccf-cf2eec4ec06b"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:5000/create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"expected_output\": \"aaaa\",\n        \"id\": \"1234\",\n        \"input\": \"aa\",\n        \"language\": \"sss\",\n        \"level\": \"dddd\",\n        \"point\": 14,\n        \"problem\": \"zzz\",\n        \"title\": \"qqqq\"\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/create",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:5000/update?id=3136e3cd-c90c-48bb-b9a9-60ca68382ad7",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \"expected_output\": \"Helloooooooooooooooooo World\",\n        \"input\": \"\",\n        \"language\": \"python\",\n        \"level\": \"beginner\",\n        \"point\": 1,\n        \"problem\": \"Print hello world in Python using print\",\n        \"title\": \"Say hello with python\"\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/update?id=3136e3cd-c90c-48bb-b9a9-60ca68382ad7",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"update"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "3136e3cd-c90c-48bb-b9a9-60ca68382ad7"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://127.0.0.1:5000/delete?id=3136e3cd-c90c-48bb-b9a9-60ca68382ad7",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/delete?id=3136e3cd-c90c-48bb-b9a9-60ca68382ad7",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"delete"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "3136e3cd-c90c-48bb-b9a9-60ca68382ad7"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
